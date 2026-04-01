@@ -682,20 +682,52 @@
 
 console.log(Math.floor(98*10e7 + Math.random()*100000000))
 
-let arr = ['apple','banana','apple','orange','banana']
-function freq(arr,i=0,obj= {}){
-  if(i==arr.length) return  obj;
-  let ch = arr[i]
-  obj[ch] = (obj[ch]||0)+1
-return freq(arr,i+1,obj)
-}
-console.log(freq(arr))
-const user ={
-  name:"Ashish",
-  city:"Delhi"
-}
 
-const user1 = JSON.parse(JSON.stringify(user))
-user1.city="Mumbai"
-console.log(user)
+let ary = ['apple','banana','apple','orange','banana','apple']
+function freq(ary,i=0,obj={}){
+  if(i==ary.length) return obj;
+  let item = ary[i];
+  obj[item] = (obj[item] ||0) +1
+  return freq(ary,i+1,obj);
+}
+console.log(freq(ary))
+
+
+const user1 ={
+  name:"Ashish",
+  address:{
+    city:"Delhi"
+  }
+};
+const user2 =JSON.parse(JSON.stringify(user1));
+user2.address.city="mumbai";
 console.log(user1)
+console.log(user2)
+
+const data = {
+  user:{
+    profile:{
+      name:"Ashisah",
+      skills:["JS","React"]
+    }
+  }
+}
+  data.user.profile.skills.push('Node')
+console.log(JSON.stringify(data));
+
+const arr = [1,2,3,4,5];
+function sum(arr,i=0){
+  if(i==arr.length) return 0;
+  return arr[i] + sum(arr,i+1)
+
+}
+console.log(sum(arr))
+
+// ------------------------------------------arr method------------------------
+let Array = [1,2,3,4,5]
+const sumArray = Array.reduce((item,total)=>{
+  return item+total
+},0)
+console.log(sumArray)
+
+console.log(Math.floor(100000 + Math.random()*100000))
