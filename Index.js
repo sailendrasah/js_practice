@@ -789,3 +789,794 @@ const employeeNamew = Object.entries(employeeAvg)
   .map(([user]) => user);
 console.log(employeeNamew);
  
+// Write a program to create an array with five numbers
+// const takeInput = require('readline').createInterface({input:process.stdin,output:process.stdout});
+// let arr =[];
+// let first  = 0;
+
+// function ask(){
+// if(first<5){
+//    takeInput.question("enter 1 more  element ",(num)=>{
+//       arr.push(num);
+//      first++;
+     
+// ask();
+//    })
+// }
+//    else{
+//       console.log("your five number is ", arr);
+
+//       takeInput.close()
+
+//    }
+// }
+
+//  ask();
+
+// function print(n){
+//    if(n<=100){
+//       console.log(n);
+//       print(n+1);
+//       return;
+//    }
+
+// }
+// print(1)
+// const readline = require("readline").createInterface({input:process.stdin,output:process.stdout});
+
+// function printOddmultiple(n,multiple=1){
+//          if((n&1)==0){
+//    console.log("only odd number required between 1 to 10");
+// return
+// }
+//    let result = n* multiple;
+
+//    if(result>50)
+//       return;
+
+//    if(result&1){
+//       console.log(result);
+
+//    }
+
+//    printOddmultiple(n,multiple+1);
+// }
+// readline.question("enter a number from 1 to 10 : ",(value)=>{
+// printOddmultiple(value);
+// readline.close();
+// })
+
+
+// const takeInput = require("readline").createInterface({
+//   input: process.stdin,
+//   output: process.stdout,
+// });
+
+// function EvenMultiple(n, multiple = 1) {
+//   if (n & 1) {
+//     console.log("only even number is required");
+//     return;
+//   }
+//   let result = n * multiple;
+//   if (result > 50) return;
+//   if ((result & 1) == 0) {
+//     console.log(result);
+//   }
+//   EvenMultiple(n, multiple + 1);
+// }
+
+// takeInput.question("enter a number between 1 to 10 ", (value) => {
+//   if (value > 10 || value == 0) {
+//     console.log("please enter number between 1 to 10");
+//     takeInput.close();
+//   } else {
+//     EvenMultiple(value);
+//     takeInput.close();
+//   }
+// });
+
+
+// const readline = require('readline').createInterface({input:process.stdin,output:process.stdout});
+
+// function printOddmultiple(num,multiple=1){
+//    if(num%2==0){
+//       console.log("only odd number is required");
+//       return;
+//    }
+//    let result = num * multiple;
+//    if(result>50)
+//       return;
+//    if(result% 2 !=0){
+//       console.log(result);
+//    }
+//    printOddmultiple(num,multiple+1);
+// }
+// readline.question("enter a nuumber between 1 to 10: ",(value)=>{
+//    if(value==0)
+//       console.log("please enter number between 1 to 10");
+//       readline.close()
+//    printOddmultiple(value);
+//    readline.close();
+// })
+
+// const takeInput = require('readline').createInterface({input:process.stdin,output:process.stdout})
+
+// function EvenMultiple(num,multiple=1){
+//    if(num%2!=0){
+//       console.log("only even number is reqired");
+//       return;
+      
+//    }
+//    let result= num *multiple;
+//    if(result>50){
+//       return;
+//    }
+//    if(result%2==0){
+//       console.log(result);
+      
+//    }
+//    EvenMultiple(num,multiple+1);
+// }
+// takeInput.question("enter a number between 1 to 10: ",(value)=>{
+//    if(value==0){
+//       console.log("please enter a number between 1 to 10");
+//       takeInput.close();
+//       return;
+//    }
+//    EvenMultiple(value);
+//    takeInput.close()
+// })
+
+
+// const takeInput = require('readline').createInterface({input:process.stdin,output:process.stdout});
+// function EvenMultiple(num ,multipler=1){
+//    if(num%2!=0){
+//       console.log("even number is only required");
+//       return;
+//    }
+//    let result = num * multipler;
+//    if(result>50){
+//       return;
+//    }
+//    if( result % 2 ==0){
+//       console.log(result);
+//    }
+//    EvenMultiple(num,multipler+1);
+// }
+
+
+// function oddMultiple(n ,multiple=1){
+//    if(n%2==0){
+//       console.log("odd number is only required");
+//       return;
+//    }
+//    let result = n * multiple;
+//    if(result>50){
+//       return;
+//    }
+//    if(result%2!=0){
+//       console.log(result);
+      
+//    }
+//    oddMultiple(n,multiple+1);
+// }
+// takeInput.question("enter a number you want to get multiple: ",(value)=>{
+//    if(value == 0){
+//       console.log("please enter number between 1 to 10");
+//    takeInput.close();
+//    }
+//    if(value%2==0){
+//       EvenMultiple(value);
+//       takeInput.close();
+//    }
+//    else{
+//       oddMultiple(value);
+//       takeInput.close();
+//    }
+// })
+
+
+// const readline = require('readline').createInterface({input:process.stdin,output:process.stdout});
+
+// function printMultiple(num,multiple = 1){
+//    if(multiple>10) return;
+//    if(multiple%2==0){
+//       console.log(num + "X" + multiple + "=" + num*multiple)
+//    }
+//    printMultiple(num,multiple+1);
+// }
+// readline.question("Enter a number you want to multiple: ",(value)=>{
+//    printMultiple(value);
+//    readline.close();
+// })
+
+// function fib(n,a=0,b=1){
+// if(n<=0) return;
+// console.log(a)
+//  fib(n-1,b,a+b)
+// }
+// fib(8)
+
+
+function printNum(n){
+   if(n>100) return;
+   console.log(n)
+   printNum(n+1);
+}
+printNum(90)
+
+
+
+
+
+// 2. Write a program to add a new element to the end of an array.
+// const takeInput = require('readline').createInterface({input:process.stdin,output:process.stdout});
+// let arr = [1,2,3,4,5];
+// takeInput.question("enter a number which you want to inset: ",(value)=>{
+//     arr.push(Number(value));
+//     console.log("value to be inseted:  ",arr);
+    
+//     takeInput.close();
+// })
+
+// 3. Write a program to add a new element at the beginning of an array.
+// let arr = [1,2,3,4,5];
+//     arr.unshift(Number(value));
+//     console.log(arr);
+    
+// 4.Write a program to remove the last element from an array.
+// let arr = [1,2,3,4,5];
+// arr.pop();
+// console.log(arr);
+// 5.Write a program to remove the first element from an array.
+// let arr =[1,2,3,4,5]
+// arr.shift();
+// console.log(arr);
+
+
+// 6.Write a program to print all elements of an array using a loop.
+// let arr = [1,2,3,4,5];
+
+// for(let i=0;i<arr.length;i++){
+// console.log(arr[i]);
+// }
+
+
+// 7.Write a program to count the number of elements in an array.
+// let arr = [1,2,3,4,5,6];
+//  let count =0;
+// for(let i=0;i<arr.length;i++){
+//   count =  count+arr[i];
+// }
+// console.log(count);
+
+
+// 8,Write a program to check whether an array is empty or not.
+// let arr =[];
+// if(arr.length==0){
+//     console.log("arr is empty");
+// }
+// else{
+//     console.log("arr is not empty");
+// }
+
+
+// 9.Write a program to access and print the first element of an array.
+// let arr = [1,2,3,4,5]
+// console.log(arr[0]);
+
+
+// 10.Write a program to access and print the last element of an array
+// let arr = [4,5,6,7,8,10,11,16];
+// const removedItem = arr.pop();
+// console.log(removedItem)
+//OR
+// let size = arr.length;
+// console.log(arr[size-1]);
+
+
+// 11.Write a program to reverse an array.
+// let str =" hello";
+// let string = str.split("").reverse().join("");
+// console.log(string);
+
+
+// 12.sort a number
+// let arr = [5, 4, 3, 2, 1];
+// let result = arr.sort((a,b)=>{ return b-a}  );
+// // console.log(result);
+// let arr = [1,5,4,7,8,9,10];
+// let result = arr.map((a,b)=>{
+//     return a%2==0;
+// })
+// console.log(result);
+
+
+// 13. Use filter method
+// let arr = [7,8,5,2,6,9];
+// let result =  arr.filter((a,b)=>{
+//     return a*b;
+// })
+// console.log(result);
+
+
+// 14. use splice method
+// let arr =['mango','lemon','apple'];
+// let result = arr.splice(2,0,'banana');
+// console.log(arr);
+
+
+// 15. use replaceAll method
+// let str ='ram is a good boy.boy of clz';
+// let result = str.replaceAll("boy",'student');
+// console.log(result);
+
+
+// 16. Check a number is prime or not
+// const takeinput = require("readline").createInterface({
+//   input: process.stdin,
+//   output: process.stdout,
+// });
+// function isprime(num) {
+//   if (num == 1) {
+//     console.log("enter greater than 1");
+//   }
+//   for (let i = 2; i < num - 1; i++) {
+//     if (num % i == 0) {
+//       console.log("not prime", i);
+//       return;
+//     }
+
+//   }
+// }
+
+// takeinput.question("enter a number: ", (value) => {
+//   isprime(value);
+//   takeinput.close();
+// });
+
+
+// 17. Check prime number using recursion
+const takeinput = require("readline").createInterface({
+  input: process.stdin,
+  output: process.stdout,
+});
+function isprime(num, divisior = 2) {
+  if (num == 0) {
+    console.log("enter geater than 0");
+  }
+  if (divisior >= num - 1) {
+    console.log("prime number");
+  }
+  if (num % divisior == 0) {
+    console.log("not a prime",divisior);
+    return;
+  }
+  isprime(num,divisior+1);
+}
+takeinput.question("enter a number: ", (value) => {
+  isprime(Number(value));
+  takeinput.close();
+});
+
+
+// 18.Remove duplicate elements
+// let arr =[1,2,5,4,3,2,6];
+//  arr.sort((a,b)=>{
+//     return a-b;
+// })
+
+// let ans =0;
+// for(let i = 0;i<arr.length;i++){
+//     ans = ans^arr[i];
+// }
+// for(let i = 0;i<arr.length;i++){
+// ans = ans^i;
+// }
+// console.log(ans);
+
+// let arr =[20,50,60,80,70];
+// let result = arr.slice(1,2);
+// console.log(result);
+
+
+// 1.Check a number is palindrome or not
+
+// const readline = require('readline').createInterface({input:process.stdin,output:process.stdout})
+// function isPalindrome(string){
+// const reversed = string.split("").reverse().join("");
+// if(string==reversed){
+//     console.log("string is palidrome");
+// }
+// else{
+//     console.log("string is not palidrome");
+// }
+// }
+
+
+// readline.question("enter a sting: ",(value)=>{
+// isPalindrome(value);
+// readline.close();
+// })
+// const takeinput = require("readline").createInterface({
+//   input: process.stdin,
+//   output: process.stdout,
+// });
+// function missingNumber(n) {
+//   let arr = [1, 2, 3, 5];
+//   let ans = 0;
+//   let sum = n * (n + 1) / 2;
+//   for (let i = 0; i < arr.length; i++) {
+//     ans = ans+ arr[i];
+//   }
+//   let actual = sum -ans;
+//   console.log(actual);
+
+// }
+//   takeinput.question("enter a number: ",(value) => {
+//     missingNumber(Number(value))
+//      takeinput.close();
+//   });
+
+// let arr =[4,8,6,7,1,2,3,5];
+// let temp =0;
+// for(let i=0;i<arr.length-1;i++){
+//     for(let j=0;j<arr.length-i-1;j++){
+//         if(arr[j]>arr[j+1]){
+//             temp = arr[j];
+//             arr[j] = arr[j+1];
+//             arr[j+1] = temp;
+//         }
+//     }
+// }
+// console.log(arr);
+
+// let arr = [1, 2, 3, 4, 5];
+
+// function Binarysearch(arr, target, start = 0, end = arr.length - 1) {
+    
+//   if (start > end) {
+//     return -1;
+//   }
+//   let mid = Math.floor(start + (end - start) / 2);
+//   if (arr[mid] == target) {
+//     return mid;
+//   } else if (arr[mid] < target) {
+//     return Binarysearch(arr, target, mid + 1, end);
+//   } else {
+//     return Binarysearch(arr, target, start, mid - 1);
+//   }
+// }
+// let result = Binarysearch(arr, 6);
+
+// if (result!=-1) {
+//   console.log("element found");
+
+// } 
+
+// const readline = require("readline").createInterface({input:process.stdin,output:process.stdout})
+// function multipleNum(n,multiple = 1){
+//     let result = n*multiple;
+//     if(result>50){
+//         return;
+//     }
+//     console.log(result);
+//     multipleNum(n,multiple+1);
+// }
+// readline.question("enter a number which you want to multiple: ",(value)=>{
+//     multipleNum(value);
+//     readline.close();
+// })
+
+
+// function sumDigit(n){
+//     if(n==0) return 0;
+//     let digit = n%10;
+//     n =Math.floor( n/10);
+//   return digit +  sumDigit(n);
+// }
+    
+// // console.log(sumDigit(123));
+// const takeinput = require('readline').createInterface({input:process.stdin,output:process.stdout})
+// function reverseNumber(num){
+//     let result = num.split('').reverse().join("")
+//     console.log(result);
+// }
+// takeinput.question("enter a number: ",(value)=>{
+//     reverseNumber(value);
+//     takeinput.close();
+// })
+
+
+function isPrime(n,divisor=2){
+    if(n>100) return;
+    if(divisor > n-1){
+        console.log("prime number");
+        return;
+        }
+        if(n % divisor == 0){
+            console.log("not prime number",n);
+            return;
+        }
+        isPrime(n,divisor+1)
+}
+isPrime(12)
+// // print factorial Number
+// const takeInput = require("readline").createInterface({
+//   input: process.stdin,
+//   output: process.stdout,
+// });
+
+// function fact(num) {
+//   if (num == 0) {
+//     return 1;
+//   }
+//   return num * fact(num - 1);
+// }
+// takeInput.question("enter a number: g", (value) => {
+//   let result = fact(value);
+//   console.log(result);
+
+//   takeInput.close();
+// });
+
+
+// //  print Fibonacci series
+// function Fibonacci(n){
+//     let a= 0; 
+//     let b=1;
+//     for(let i=0;i<n;i++){
+//         console.log(a);
+//         let temp = a+b;
+//         a = b;
+//         b = temp;
+//     }
+//     return a;
+// }
+// console.log(Fibonacci(8));
+
+
+// Print 1 to 100 without loop
+// function print(n){
+//     if(n<1)
+//         return;
+//     console.log(n);
+//     print(n-1);
+//     return;
+// }
+// print(100);
+
+
+// Print even numbers without loop
+
+// function even(n){
+//     if(n>50)
+//  return;
+// if(n%2==0){
+//     console.log(n);
+// }
+// even(n+1);
+
+// }
+// even(0);
+
+
+// Print odd numbers without loop
+// function odd(n){
+//     if(n>50)
+//         return;
+//     if(n%2!=0){
+//         console.log(n);
+//     }
+//     odd(n+1);
+// }
+// odd(5);
+
+// // Sum of numbers 1 to N without loop
+const takeInput = require('readline').createInterface({input:process.stdin,output:process.stdout})
+let ans = 0;
+function sum(n){
+    if(n==0)
+        return ans;
+    ans = ans+n;
+   return  sum(n-1);
+}
+takeInput.question("enter a number: ",(value)=>{
+    let result = Number(value);
+    console.log(sum(result));
+    
+    takeInput.close();
+})
+// Reverse array
+let arr =[5,4,3,2,1];
+let result = arr.reverse();
+console.log(result);
+
+
+// print 1 to 100
+const takeInput = require("readline").createInterface({
+  input: process.stdin,
+  output: process.stdout,
+});
+
+function print(n) {
+  if (n > 100) return;
+  console.log(n);
+
+  print(n + 1);
+}
+takeInput.question("ewnter a initial number: ", (value) => {
+  print(Number(value));
+  takeInput.close();
+});
+
+// WAP to find largest number in Array
+// let arr =[10,20,50,90,100];
+// let max = arr[0];
+// for(let i=0;i<arr.length;i++){
+// if(arr[i]>max){
+//     max= arr[i];
+// }
+// }
+// console.log(max);
+
+// WAP to print smallest number in an Array
+
+// let arr = [10,20,50,90,100];
+// let min = arr[0];
+//   for(let i=0;i<arr.length;i++){
+//     if(arr[i]<min){
+//         min = arr[i];
+//     }
+//   }
+//   console.log(min);
+
+// WAp to move all zero to the end
+// let arr = [10, 0, 50, 0, 2, 0, 1, 0];
+// let j = 0;
+// for (let i = 0; i < arr.length; i++) {
+//   if (arr[i] != 0) {
+//     let temp = arr[i];
+//     arr[i] = arr[j];
+//     arr[j] = temp;
+
+//     j++;
+//   }
+// }
+// console.log(arr);
+// WAP to find number using linear search
+let arr = [5,4,2,1,3];
+ function linear(arr,target,i=0){
+if(i==arr.length)
+    return -1;
+if(arr[i]==target){
+    console.log(i);
+    
+}
+linear(arr,target,i+1);
+ }
+ linear(arr,1);
+ 
+// let arr = [1, 2, 5, 4, 3, 2, 6];
+// arr.sort((a, b) => {
+//   return a - b;
+// });
+// console.log(arr);
+
+// remove duplicate
+// let duplicate = arr.filter((element, index) => {
+//   return arr.indexOf(element) == index;
+// });
+// console.log(duplicate);
+
+// count no. of apperance
+let str = "javascript";
+let obj = {};
+for (let i = 0; i < str.length; i++) {
+  let ch = str[i];
+  if (obj[ch]) {
+    obj[ch] = obj[ch] + 1;
+  } else {
+    obj[ch] = 1;
+  }
+}
+console.log(obj);
+
+// print 1 to 100
+// const takeInput = require("readline").createInterface({
+//   input: process.stdin,
+//   output: process.stdout,
+// });
+
+// function print(n) {
+//   if (n > 100) return;
+//   console.log(n);
+
+//   print(n + 1);
+// }
+// takeInput.question("ewnter a initial number: ", (value) => {
+//   print(Number(value));
+//   takeInput.close();
+// });
+
+// multiple number print
+
+function printMultiple(num, multiple = 1) {
+  let result = num * multiple;
+  if (result > 50) return;
+  console.log(result);
+  printMultiple(num, multiple + 1);
+}
+printMultiple(5);
+
+const user = [
+  { id: 1, name: "ashish", active: true },
+  { id: 2, name: "rahul", active: false },
+  { id: 3, name: "neha", active: true },
+  { id: 4, name: "ashish", active: false },
+];
+// sort by nameUser name
+const userSort = user.sort((a, b) => {
+  return a.name.localeCompare(b.name);
+});
+console.log(userSort);
+
+// uppercase by name
+const nameUser = user.map((element) => {
+  return element.name.toLocaleUpperCase();
+});
+console.log(nameUser);
+
+// remove duplicate by name
+const newUesr = user.filter((element, index, arr) => {
+  return arr.findIndex((u) => u.name == element.name);
+});
+console.log(newUesr);
+
+//  Delete  by  id
+let id = 3;
+user.filter((element) => {
+  if (element.id != 3) {
+    console.log(element);
+  }
+});
+
+// chech number isprime or not
+
+// function isPrime(n){
+//     for(let i=2;i<n;i++){
+//         if(n%i==0){
+//             console.log(" not prime");     
+//             return;
+//         }
+//         else{
+//             console.log(" prime");
+//             return;
+//         }
+//     }
+// }
+// isPrime(6);
+
+// chech number isprime or not using recursion
+
+function isPrime(n,divisor = 2){
+  if(divisor>n-1){
+    console.log("prime number");
+    return;
+  }
+  if(n%divisor==0){
+    console.log("not prime",divisor);
+    return;
+  }
+  isPrime(n,divisor+1);
+}
+isPrime(21);
+
+
+// remove duplicate
+// let arr = [1,2,3,3,4,4,5,5];
+//  let newArr = arr.filter((element,index)=>{
+// return  arr.indexOf(element)==index;
+//  });
+//  console.log(newArr);
+ 
