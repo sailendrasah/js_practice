@@ -379,7 +379,7 @@
 // // const obj = ['ram','shyam'];
 // // const obj1 = obj.toString();
 // // console.log(obj1)
-// // const obj2 = obj1.split(", ") 
+// // const obj2 = obj1.split(", ")
 // // console.log(obj2)
 
 // // const myPromises = new Promise((res,rej)=>{
@@ -412,7 +412,6 @@
 // // }
 // // console.log(freq('javascript'))
 
-
 // // const useId = [
 // //   {id:1,name:"aahish",active:true},
 // //   {id:2,name:"rahul",active:false},
@@ -421,7 +420,6 @@
 
 // // const activeUser = useId.filter((item)=>item.active).map((item)=>item.name.toLocaleUpperCase())
 // // console.log(activeUser)
-
 
 // // let number = [4,2,8,2,1,4,9]
 // // number.sort();
@@ -472,7 +470,6 @@
 // // count()
 // // count()
 
-
 // // class transaction{
 // //   constructor(owner,initialBalance){
 // //     this.owner=owner,
@@ -495,7 +492,6 @@
 // // tp.process({type:"deposit","amount":1000})
 // // tp.showBalance()
 
-
 // // class rewardpoint extends transaction{
 // //   constructor(owner,initialBalance){
 // //     super(owner,initialBalance)
@@ -503,7 +499,7 @@
 // //   }
 // //   deposit(amount){
 // //     super.deposit(amount)
-  
+
 // //     const reward = Math.floor(amount/100)
 // //     this.point+=reward
 // //   }
@@ -511,12 +507,11 @@
 // //   console.log(`Reward Points: ${this.point}`);
 // //     return this.point;
 // //     }
-  
-// // } 
+
+// // }
 // // const rp = new rewardpoint("tommy",500);
 // // rp.deposit(500)
 // // rp.getPoint()
-
 
 // // function Print(n){
 // //   if(n>100) return
@@ -524,8 +519,7 @@
 // //   Print(n+1);
 // // }
 // // Print(1)
- 
- 
+
 // // const takeInput = require('readline').createInterface({input:process.stdin,output:process.stdout});
 
 // // function printMultiple(num,multiple=1){
@@ -546,10 +540,8 @@
 // }
 // console.log(reverse('hello'))
 
-
-
 // function isPalidrome(str,s=0,e=str.length-1){
-//   if(s>e) return 
+//   if(s>e) return
 //   if(str[s]!=str[e]){
 //     return false
 //   }
@@ -561,7 +553,6 @@
 // }
 // console.log(isPalidrome('madam'))
 
-
 // // let arr = [50,70,80,90,200,500]
 // // let larg = arr[0];
 // // for(let i=0;i<arr.length;i++){
@@ -570,7 +561,6 @@
 // //   }
 // // }
 // // console.log(larg)
-
 
 // // let arr = [1,2,2,3,4,4,4]
 // // let unique = arr.filter((elem,index,Arr)=>{
@@ -618,7 +608,7 @@
 // }
 // for(let i=0;i<arr.length;i++){
 //   if(arr[i]<smallest){
-   
+
 //     smallest =arr[i];
 //   }
 // }
@@ -641,21 +631,19 @@
 // })
 // console.log(duplicate)
 
-
 // // Find missing number in an array (1 to n)
 // function missing(str,n){
 //   let actualsum = n*(n+1)/2;
 //   let sum =0;
 //   for (let i=0;i<str.length;i++){
 //     sum = sum + str[i];
-//   } 
+//   }
 //   let realsum = actualsum-sum;
 // return realsum
 // }
 // console.log(missing([1,2,3,5,6,7],7))
 
-
-// // Move all zeros to the end 
+// // Move all zeros to the end
 // let arr4 =[1,0,2,0,3,2,0,5];
 // function moves(arr4,s=0,e=arr4.length){
 // if(s>e) return;
@@ -663,7 +651,7 @@
 //   swap(arr4[s],arr4[e])
 // }
 
-// }  
+// }
 // let arr5 = [1,2,3,4,5]
 // const oddEven = arr5.map((item)=>{
 // //   if(item%2==0){
@@ -672,62 +660,132 @@
 // //   else{
 // //     return "odd"
 // //   }
-// // }) 
+// // })
 // // console.log(oddEven)
 //  let arr =[1,2,3,4,5]
 //  let result =arr.splice(1,3,'a','b','c')
 //  console.log(result)
 //  console.log(arr)
 
+console.log(Math.floor(98 * 10e7 + Math.random() * 100000000));
 
-console.log(Math.floor(98*10e7 + Math.random()*100000000))
-
-
-let ary = ['apple','banana','apple','orange','banana','apple']
-function freq(ary,i=0,obj={}){
-  if(i==ary.length) return obj;
+let ary = ["apple", "banana", "apple", "orange", "banana", "apple"];
+function freq(ary, i = 0, obj = {}) {
+  if (i == ary.length) return obj;
   let item = ary[i];
-  obj[item] = (obj[item] ||0) +1
-  return freq(ary,i+1,obj);
+  obj[item] = (obj[item] || 0) + 1;
+  if (obj[item] === 1) return item;
+  return freq(ary, i + 1, obj);
 }
-console.log(freq(ary))
+console.log(freq(ary));
 
-
-const user1 ={
-  name:"Ashish",
-  address:{
-    city:"Delhi"
-  }
+const user1 = {
+  name: "Ashish",
+  address: {
+    city: "Delhi",
+  },
 };
-const user2 =JSON.parse(JSON.stringify(user1));
-user2.address.city="mumbai";
-console.log(user1)
-console.log(user2)
+const user2 = JSON.parse(JSON.stringify(user1));
+user2.address.city = "mumbai";
+console.log(user1);
+console.log(user2);
 
 const data = {
-  user:{
-    profile:{
-      name:"Ashisah",
-      skills:["JS","React"]
-    }
-  }
-}
-  data.user.profile.skills.push('Node')
+  user: {
+    profile: {
+      name: "Ashisah",
+      skills: ["JS", "React"],
+    },
+  },
+};
+data.user.profile.skills.push("Node");
 console.log(JSON.stringify(data));
 
-const arr = [1,2,3,4,5];
-function sum(arr,i=0){
-  if(i==arr.length) return 0;
-  return arr[i] + sum(arr,i+1)
-
+const arr = [1, 2, 3, 4, 5];
+function sum(arr, i = 0) {
+  if (i == arr.length) return 0;
+  return arr[i] + sum(arr, i + 1);
 }
-console.log(sum(arr))
+console.log(sum(arr));
 
 // ------------------------------------------arr method------------------------
-let Array = [1,2,3,4,5]
-const sumArray = Array.reduce((item,total)=>{
-  return item+total
-},0)
-console.log(sumArray)
+let Array = [1, 2, 3, 4, 5];
+const sumArray = Array.reduce((item, total) => {
+  return item + total;
+}, 0);
+console.log(sumArray);
 
-console.log(Math.floor(100000 + Math.random()*100000))
+console.log(Math.floor(100000 + Math.random() * 100000));
+
+// const students=[
+//   {user:"A",mark:[20,25,35]},
+//   {user: "B",mark:[30,35,45]},
+//   {user: "C",mark:[20,10,35]},
+// ]
+
+// const avg = students.reduce((item,value)=>{
+// const total = value.mark.reduce((a,b)=>a+b ,0)
+// const avg = total/value.mark.length;
+// if(!item[value.user]){
+//   item[value.user] = 0;
+// }
+
+//   item[value.user]=+ avg;
+//   return item;
+
+// },{})
+
+// const avgMark = Object.entries(avg).filter(([user,value])=>{
+//   return value>30
+// })
+
+// console.log(avgMark)
+
+const students = [
+  { name: "A", marks: [40, 50, 60] },
+  { name: "B", marks: [20, 30, 35] },
+  { name: "C", marks: [70, 80, 90] },
+];
+
+// 👉 Question:
+// Using .filter(), sirf wo students nikalo jinka average marks 50 se zyada ho
+
+const sumMark = students.reduce((item, value) => {
+  const totalSum = value.marks.reduce((a, b) => a + b, 0);
+  const avg = totalSum / value.marks.length;
+  if (!item[value.name]) {
+    item[value.name] = 0;
+  }
+  item[value.name] += avg;
+  return item;
+}, {});
+const filter = Object.entries(sumMark).filter(([user, value]) => {
+  return value > 50;
+});
+console.log(filter);
+
+const employees = [
+  { name: "A", salary: [1000, 2000, 3000] },
+  { name: "B", salary: [500, 800, 900] },
+  { name: "C", salary: [4000, 2000, 1000] },
+];
+
+// 👉 Task:
+// हर employee का avg salary निकालो
+// सिर्फ वो names print करो जिनका avg > 2000
+
+const employeeAvg = employees.reduce((item, value) => {
+  const totalSalary = value.salary.reduce((a, b) => a + b, 0);
+  const avg = totalSalary / value.salary.length;
+  if (!item[value.name]) {
+    item[value.name] = 0;
+  }
+  item[value.name] += avg;
+  return item;
+}, {});
+console.log(employeeAvg);
+const employeeNamew = Object.entries(employeeAvg)
+  .filter(([user, value]) => value > 2000)
+  .map(([user]) => user);
+console.log(employeeNamew);
+ 
