@@ -1643,58 +1643,110 @@
 // a= a-b;
 
 // console.log(a,"",b)
- const users = [
-  {
-    id: 1,
-    orders: [
-      { id: 101, price: 200 },
-      { id: 102, price: 300 }
-    ]
+//  const users = [
+//   {
+//     id: 1,
+//     orders: [
+//       { id: 101, price: 200 },
+//       { id: 102, price: 300 }
+//     ]
+//   }
+// ];
+
+// users[0].orders.filter(order => {
+//   if (order.id === 102) {
+//     order.price = 500;
+//   }
+// });
+
+// console.log(JSON.stringify(users, null, 2));
+//  const j="ram-shyam"
+// console.log(j.split('-'))
+
+
+// let n = 123;
+// let ans =0
+// while(n!=0){
+// ans++;
+// n =Math.floor(n/10);
+// }
+// console.log(ans)
+
+// function rotate(arr8,k){
+//   if(k==0) return arr8;
+//   let last = arr8.pop();
+//   arr8.unshift(last);
+//   return rotate(arr8,k-1);
+// }
+// console.log(rotate([1,2,3,4,5],2))
+// function reverse(str,i=str.length-1){
+//   if(i<0) return '' ;
+//   return str[i]+reverse(str,i-1)
+// }
+// console.log(reverse('hello'))
+// function palidrom(str,s=0,e=str.length-1){
+//   if(s>e) return '';
+//   if(str[s]!=str[e]){
+//     console.log("not palidrome")
+//     return
+//   }
+//   else{
+//     console.log("palidrome")
+//     return
+//   }
+//   return palidrom(str,s+1,e-1);
+// }
+// palidrom("mam")
+// palidrom("car")
+
+// let arr = ["a", "b", "a", "c", "b", "d"];
+// // find first non-repeating element
+// function freq(arr,i=0,obj={}){
+// if(i==arr.length) return obj;
+// let item = arr[i];
+// obj[item] = (obj[item] || 0)+1
+// return freq(arr,i+1,obj)
+// }
+// function firstNonRepeat(arr, i = 0, obj = freq(arr)) {
+//   if (i === arr.length) return -1;
+
+//   if (obj[arr[i]] === 1) return arr[i];
+
+//   return firstNonRepeat(arr, i + 1, obj);
+// }
+
+// console.log(firstNonRepeat(arr));
+
+// let str = "hello";
+// // output: "olleh" using recursion
+// function reverse(str,i=str.length-1){
+//   if(i<0) return '';
+//   return str[i] + reverse(str,i-1);
+// }
+// console.log(reverse(str))
+
+let arr = [1, [2, [3, 4], 5]];
+// output: [1,2,3,4,5]
+
+function flat(arr){
+  let result = []
+  function helper(currEle,i=0){
+    if(i==currEle.length) return '';
+    let item = currEle[i];
+    if(Array.isArray(item)){
+      helper(item)
+    }
+    else{
+      result.push(item)
+    }
+     helper(currEle,i+1);
   }
-];
-
-users[0].orders.filter(order => {
-  if (order.id === 102) {
-    order.price = 500;
-  }
-});
-
-console.log(JSON.stringify(users, null, 2));
- const j="ram-shyam"
-console.log(j.split('-'))
-
-
-let n = 123;
-let ans =0
-while(n!=0){
-ans++;
-n =Math.floor(n/10);
+  helper(arr)
+  return result;
 }
-console.log(ans)
-
-function rotate(arr8,k){
-  if(k==0) return arr8;
-  let last = arr8.pop();
-  arr8.unshift(last);
-  return rotate(arr8,k-1);
+function sum(arr,i=0){
+if(i==arr.length) return 0;
+return arr[i] + sum(arr,i+1)
 }
-console.log(rotate([1,2,3,4,5],2))
-function reverse(str,i=str.length-1){
-  if(i<0) return '' ;
-  return str[i]+reverse(str,i-1)
-}
-console.log(reverse('hello'))
-function palidrom(str,s=0,e=str.length-1){
-  if(s>e) return '';
-  if(str[s]!=str[e]){
-    console.log("not palidrome")
-    return
-  }
-  else{
-    console.log("palidrome")
-    return
-  }
-  return palidrom(str,s+1,e-1);
-}
-palidrom("mam")
-palidrom("car")
+console.log(flat(arr))
+console.log(sum(flat(arr)))
